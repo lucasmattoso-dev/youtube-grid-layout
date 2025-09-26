@@ -50,7 +50,7 @@ Como este é um projeto front-end estático, não há necessidade de instalaçã
 
 1.  Clone este repositório:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone (https://github.com/lucasmattoso-dev/youtube-grid-layout.git)
     ```
 2.  Navegue até o diretório do projeto.
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
