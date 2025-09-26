@@ -17,9 +17,7 @@ Este projeto foca na construção de uma interface visualmente fiel à original 
 
 ### 🚀 Demonstração ao Vivo (Deploy)
 
-Você pode ver o projeto em ação aqui: **[Link para o seu projeto no GitHub Pages]**
-
-*(Após publicar no GitHub Pages, substitua este texto pelo link.)*
+Você pode ver o projeto em ação aqui: **[Clone da Interface do YouTube](https://lucasmattoso-dev.github.io/youtube-grid-layout/)**
 
 ---
 
@@ -57,8 +55,3 @@ Como este é um projeto front-end estático, não há necessidade de instalaçã
 2.  Navegue até o diretório do projeto.
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
 
----
-
-### ⚖️ Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
