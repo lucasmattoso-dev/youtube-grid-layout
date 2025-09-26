@@ -160,7 +160,7 @@ a {
 /* --- Layout da Grade de Vídeos --- */
 .content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px 16px;
     padding: 24px;
     overflow-y: auto;
@@ -175,7 +175,6 @@ a {
 
 .video-thumbnail {
     width: 100%;
-    border-radius: 12px;
     margin-bottom: 12px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -223,4 +222,33 @@ a {
     border: none;
     border-top: 1px solid #e5e5e5;
     margin: 12px 0;
+}
+
+/* --- Media Queries para Responsividade --- */
+
+@media (max-width: 1313px) {
+    .main-container {
+        grid-template-columns: 72px 1fr; 
+    }
+
+    .sidebar__text {
+        display: none; 
+    }
+
+    .sidebar__link {
+        justify-content: center; 
+        padding: 16px 0;
+        gap: 0;
+    }
+
+    .content {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 792px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
