@@ -13,7 +13,6 @@ Este projeto foca na construção de uma interface visualmente fiel à original 
 
 ![Screenshot do Projeto](./assets/imagens/screenshot.png)
 
-*(Dica: Tire uma captura de tela do seu projeto e salve-a como `screenshot.png` na pasta `assets/imagens/` para que ela apareça aqui.)*
 
 ### 🚀 Demonstração ao Vivo (Deploy)
 
