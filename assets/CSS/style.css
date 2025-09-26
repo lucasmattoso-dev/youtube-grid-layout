@@ -1,0 +1,226 @@
+/* Reset básico e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos do Header (básico para posicionamento) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 56px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+}
+
+.header_left, .header_center, .header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_left {
+    gap: 16px;
+}
+
+.header__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    /* Melhora a renderização de ícones com bordas nítidas */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.header__logo {
+    height: 20px;
+}
+
+.header_center {
+    flex: 1;
+    max-width: 640px;
+    margin: 0 40px;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #1c62b9;
+}
+
+.search-bar button {
+    width: 64px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #f0f0f0;
+}
+
+.search-bar button img {
+    height: 24px;
+    width: 24px;
+}
+
+.header_right {
+    gap: 24px;
+}
+
+.header__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Layout Principal */
+.main-container {
+    display: grid;
+    grid-template-columns: 240px 1fr; 
+    height: calc(100vh - 56px);
+}
+
+.sidebar {
+    background-color: white;
+    padding-top: 10px;
+    overflow-y: auto;
+}
+
+/* --- Estilos da Sidebar --- */
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;    
+    gap: 24px;
+    height: 40px;
+}
+
+.sidebar__link:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar__item--active {
+    background-color: #e5e5e5;
+    font-weight: 500;
+}
+
+.sidebar__item--active .sidebar__link:hover {
+    background-color: #d9d9d9;
+}
+
+.sidebar__icon {
+    width: 24px;
+    height: 24px;
+    /* Melhora a renderização de ícones com bordas nítidas */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.sidebar__text {
+    font-size: 0.875rem;
+}
+
+/* --- Layout da Grade de Vídeos --- */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 16px;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+/* --- Estilos do Card de Vídeo --- */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background-color: #e0e0e0;
+}
+
+.video-details {
+    display: flex;
+}
+
+.channel-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #e0e0e0;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0f0f0f;
+    line-height: 1.4;
+    /* Limita o título a 2 linhas */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.channel-name,
+.video-metadata {
+    font-size: 0.875rem;
+    color: #606060;
+    line-height: 1.3;
+}
+
+.sidebar__divider {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 12px 0;
+}
